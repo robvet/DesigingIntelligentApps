@@ -1,0 +1,64 @@
+site_name: Designing Intelligent AI Solutions on the Azure Platform
+#nav:
+#  - Home: index.md
+#  - Chapter 1:
+#    - Page 2: page2.md
+#    - Page 3: page3.md
+nav:
+  - Home: index.md
+  - AI Workflow Frameworks:
+      - Langchain: Frameworks/Langchain.md
+      - Semantic Kernel: Frameworks/SemanticKernel.md
+      - Llama Index: Frameworks/LlamaIndex.md
+#  - Agents in Action:
+#      - Why Agents?:
+#      - Function Calling:
+#      - MultiAgents:
+#      - AutoGen:
+  - About Us: about.md
+theme:
+  name: material #readthedocs
+  features:
+    # Adds menu button to the top of the page
+#    - navigation.tabs
+    # Blah
+#    - navigation.sections
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - toc.integrate
+    - toc.follow
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+#    - navigation.top
+    - navigation.path
+#    - search.suggest
+#    - search.highlight
+    - content.tabs.link
+#    - content.footnote.tooltips
+#    - content.code.copy
+#    - content.code.annotation
+    - content.tooltips
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+#markdown_extensions:
+#  - pymdownx.highlight:
+#      anchor_linenums: true
+
+extra_css:
+    - extra.css
+

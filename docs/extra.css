@@ -1,0 +1,20 @@
+/*Move arrow icon to the left of the navigation bar*/
+.md-nav__link {
+  flex-direction: row-reverse;
+}
+.md-nav__link .md-ellipsis {
+  flex-grow: 1;
+}
+
+/*Hide the title in the navigation bar*/
+
+/*.md-nav__title {*/
+/*  display: none;*/
+/*}*/
+
+
+
+/*.md-main, .md-content {*/
+/*  margin-top: 0 !important;  !* Adjust the top margin *!*/
+/*  padding-top: 0 !important;  !* Adjust the top padding *!*/
+/*}*/

@@ -1,0 +1,33 @@
+name: ci
+on:
+  push: # a push event to the main branch triggers the action
+    branches:
+#      - master
+      - main
+permissions:
+   # provies wirte access to the repository for the action
+   contents: write
+jobs:
+  # names the job deploy
+  deploy:
+    # runs on an ubuntu agent
+    runs-on: ubuntu-latest
+    steps:
+      # checks out the repository
+      - uses: actions/checkout@v3
+      # sets up python environment
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+     # caches the python packages to speed up the workflow
+      - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+     # does the publishing
+      # installs mkdocs and the material theme
+      - run: pip install mkdocs-material
+      # installs the gh-deploy plugin and deploys to the gh-pages branch
+      - run: mkdocs gh-deploy --force
+
+
