@@ -15,7 +15,7 @@ What are the options?
 
 To keep things simple, a front-end client could *directly communicate* with the back-end microservices, shown in Figure 4-2.
 
-![Direct client to service communication](/media/foundation/direct-client-to-service-communication.png)
+![Direct client to service communication](../media/foundation/direct-client-to-service-communication.png)
 
 **Figure 4-2.** Direct client to service communication
 
@@ -30,7 +30,7 @@ While simple to implement, direct client communication would be acceptable only 
 
 Instead, a widely accepted cloud design pattern is to implement an [API Gateway Service](../microservices/architect-microservice-container-applications/direct-client-to-microservice-communication-versus-the-api-gateway-pattern.md) between the front-end applications and back-end services. The pattern is shown in Figure 4-3.
 
-![API Gateway Pattern](/media/foundation/api-gateway-pattern.png)
+![API Gateway Pattern](../media/foundation/api-gateway-pattern.png)
 
 **Figure 4-3.** API gateway pattern
 
@@ -40,7 +40,7 @@ The gateway insulates the client from internal service partitioning and refactor
 
 Care must be taken to keep the API Gateway simple and fast. Typically, business logic is kept out of the gateway. A complex gateway risks becoming a bottleneck and eventually a monolith itself. Larger systems often expose multiple API Gateways segmented by client type (mobile, web, desktop) or back-end functionality. The [Backend for Frontends](/azure/architecture/patterns/backends-for-frontends) pattern provides direction for implementing multiple gateways. The pattern is shown in Figure 4-4.
 
-![Backend for Frontend Pattern](/media/foundation/backend-for-frontend-pattern.png)
+![Backend for Frontend Pattern](../media/foundation/backend-for-frontend-pattern.png)
 
 **Figure 4-4.** Backend for frontend pattern
 
@@ -64,7 +64,7 @@ Throughout this book, we evangelize hosting cloud-native systems in [Kubernetes]
 
 The [Application Gateway Ingress Controller](https://azure.github.io/application-gateway-kubernetes-ingress/) enables Azure Application Gateway to work directly with [Azure Kubernetes Service](https://azure.microsoft.com/services/kubernetes-service/). Figure 4.5 shows the architecture.
 
-![Application Gateway Ingress Controller](/media/foundation/application-gateway-ingress-controller.png)
+![Application Gateway Ingress Controller](../media/foundation/application-gateway-ingress-controller.png)
 
 **Figure 4-5.** Application Gateway Ingress Controller
 
@@ -74,7 +74,7 @@ Kubernetes includes a built-in feature that supports HTTP (Level 7) load balanci
 
 For moderate to large-scale cloud-native systems, you may consider [Azure API Management](https://azure.microsoft.com/services/api-management/). It's a cloud-based service that not only solves your API Gateway needs, but provides a full-featured developer and administrative experience. API Management is shown in Figure 4-6.
 
-![Azure API Management](/media/foundation/azure-api-management.png)
+![Azure API Management](../media/foundation/azure-api-management.png)
 
 **Figure 4-6.** Azure API Management
 
@@ -135,7 +135,7 @@ Once enabled, a cloud-based HTTP service can push content updates directly to co
 
 Figure 4-7 shows a set of HTTP Clients connecting to a Cloud-native application with Azure SignalR enabled.
 
-![Azure SignalR](/media/foundation/azure-signalr-service.png)
+![Azure SignalR](../media/foundation/azure-signalr-service.png)
 
 **Figure 4-7.** Azure SignalR
 
