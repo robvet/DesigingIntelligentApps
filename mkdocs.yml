@@ -1,46 +1,90 @@
 site_name: Designing Intelligent AI Solutions on the Azure Platform
+site_description: >-
+  This is the site description
 #nav:
 #  - Home: index.md
 #  - Chapter 1:
 #    - Page 2: page2.md
 #    - Page 3: page3.md
 nav:
-  - Home: index.md
-  - AI Workflow Frameworks:
+  - Cover: index.md
+  - Introduction: Introduction/introduction.md
+  - Foundation:
+      - Getting Started: Foundation/GettingStarted.md
+      - Fundamentals: Foundation/Fundamentals.md
+      - Advanced: Foundation/Advanced.md
+  - Platform:
+      - Azure Fundamentals: Platform/AzureFundamentals.md
+      - Azure Services: Platform/AzureServices.md
+      - Azure Frameworks: Platform/AzureFrameworks.md
+  - Tools:
+      - AI Tools: Tools/AITools.md
+      - AI Frameworks: Tools/AIFrameworks.md
+      - AI Services: Tools/AIServices.md
+  - Frameworks:
       - Langchain: Frameworks/Langchain.md
       - Semantic Kernel: Frameworks/SemanticKernel.md
       - Llama Index: Frameworks/LlamaIndex.md
+  - Data:
+      - Data Fundamentals: Data/DataFundamentals.md
+      - Data Services: Data/DataServices.md
+      - Data Frameworks: Data/DataFrameworks.md
+  - Prompting:
+      - Prompting Fundamentals: Prompting/PromptingFundamentals.md
+      - Prompting Services: Prompting/PromptingServices.md
+      - Prompting Frameworks: Prompting/PromptingFrameworks.md
+  - Designs:
+      - AI Design Patterns: Design/AIDesignPatterns.md
+      - AI Design Frameworks: Design/AIDesignFrameworks.md
+      - AI Design Services: Design/AIDesignServices.md
+
 #  - Agents in Action:
 #      - Why Agents?:
 #      - Function Calling:
 #      - MultiAgents:
 #      - AutoGen:
   - About Us: about.md
+extra_javascript:
+  - js/collapse_nav.js
 theme:
   name: material #readthedocs
   features:
-    # Adds menu button to the top of the page
-#    - navigation.tabs
-    # Blah
-#    - navigation.sections
-    - navigation.expand
+    - language: en
     - navigation.footer
-    - navigation.indexes
-    - toc.integrate
-    - toc.follow
-    - navigation.tracking
+    - favicon: media/favicon.png
     - search.highlight
     - search.share
     - search.suggest
+
+
+    # Adds menu button to the top of the page
+#    - navigation.sections
+#    - navigation.expand
+#    - navigation.path
+#    - navigation.tabs
+    # Blah
+#    - navigation.footer
+#    - navigation.indexes
+#    - toc.integrate
+
+#    - toc.follow
+
+#    - search.highlight
+#    - search.share
+#    - search.suggest
+#    - content.tabs.link
+#    - content.tooltips
+
+#    - navigation.tracking
 #    - navigation.top
-    - navigation.path
+  #  - navigation.path
 #    - search.suggest
 #    - search.highlight
-    - content.tabs.link
+
 #    - content.footnote.tooltips
 #    - content.code.copy
 #    - content.code.annotation
-    - content.tooltips
+
   palette:
     - scheme: default
       toggle:
@@ -61,4 +105,6 @@ theme:
 
 extra_css:
     - extra.css
+# Copyright
+copyright: Copyright &copy; 2024
 
