@@ -19,7 +19,7 @@ How will you build it?
 
 If you follow the guidance from past 15 years, you'll most likely build the system shown in Figure 1.1.
 
-![Traditional monolithic design](/media/monolithic-design.png)
+![Traditional monolithic design](../media/introduction/monolithic-design.png)
 
 **Figure 1-1**. Traditional monolithic design
 
@@ -53,7 +53,7 @@ Sound familiar?
 
 Many organizations have addressed this monolithic fear cycle by adopting a cloud-native approach to building systems. Figure 1-2 shows the same system built applying cloud-native techniques and practices.
 
-![Cloud-Native Design](/media/cloud-native-design.png)
+![Cloud-Native Design](../media/introduction/cloud-native-design.png)
 
 **Figure 1-2**. Cloud-native design
 
