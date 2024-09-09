@@ -6,6 +6,8 @@ site_description: >-
 #  - Chapter 1:
 #    - Page 2: page2.md
 #    - Page 3: page3.md
+
+favicon: media/favicon.png
 nav:
   - Cover: index.md
   - Introduction: Introduction/introduction.md
