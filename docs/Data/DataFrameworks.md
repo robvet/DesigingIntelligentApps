@@ -10,7 +10,7 @@ As we've seen throughout this book, a cloud-native approach changes the way you 
 
 Figure 5-1 contrasts the differences.
 
-![Data storage in cloud-native applications](/media/data/distributed-data.png)
+![Data storage in cloud-native applications](../media/data/distributed-data.png)
 
 **Figure 5-1**. Data management in cloud-native applications
 
@@ -33,7 +33,7 @@ Segregating data also enables each microservice to implement the data store type
 
 Figure 5-2 presents the principle of polyglot persistence in a cloud-native system.
 
-![Polyglot data persistence](/media/data/polyglot-data-persistence.png)
+![Polyglot data persistence](../media/data/polyglot-data-persistence.png)
 
 **Figure 5-2**. Polyglot data persistence
 
@@ -51,7 +51,7 @@ While relational databases remain relevant for microservices with complex data, 
 
 While microservices are independent and focus on specific functional capabilities, like inventory, shipping, or ordering, they frequently require integration with other microservices. Often the integration involves one microservice *querying* another for data. Figure 5-3 shows the scenario.
 
-![Querying across microservices](/media/data/cross-service-query.png)
+![Querying across microservices](../media/data/cross-service-query.png)
 
 **Figure 5-3**. Querying across microservices
 
@@ -64,7 +64,7 @@ While it does decouple the backend microservice calls, the calling service must 
 
 Instead, a widely accepted pattern for removing cross-service dependencies is the [Materialized View Pattern](/azure/architecture/patterns/materialized-view), shown in Figure 5-4.
 
-![Materialized view pattern](/media/data/materialized-view-pattern.png)
+![Materialized view pattern](../media/data/materialized-view-pattern.png)
 
 **Figure 5-4**. Materialized View Pattern
 
@@ -78,7 +78,7 @@ While querying data across microservices is difficult, implementing a transactio
 
 Figure 5-5 shows the problem.
 
-![Transaction in saga pattern](/media/data/saga-transaction-operation.png)
+![Transaction in saga pattern](../media/data/saga-transaction-operation.png)
 
 **Figure 5-5**. Implementing a transaction across microservices
 
@@ -88,7 +88,7 @@ Instead, you must construct this distributed transaction *programmatically*.
 
 A popular pattern for adding distributed transactional support is the Saga pattern. It's implemented by grouping local transactions together programmatically and sequentially invoking each one. If any of the local transactions fail, the Saga aborts the operation and invokes a set of [compensating transactions](/azure/architecture/patterns/compensating-transaction). The compensating transactions undo the changes made by the preceding local transactions and restore data consistency. Figure 5-6 shows a failed transaction with the Saga pattern.
 
-![Roll back in saga pattern](/media/data/saga-rollback-operation.png)
+![Roll back in saga pattern](../media/data/saga-rollback-operation.png)
 
 **Figure 5-6**. Rolling back a transaction
 
@@ -110,7 +110,7 @@ However, a high volume data scenario can benefit from separate models and data t
 
 Figure 5-7 shows an implementation of the CQRS pattern.
 
-![Command and Query Responsibility Segregation](/media/data/cqrs-implementation.png)
+![Command and Query Responsibility Segregation](../media/data/cqrs-implementation.png)
 
 **Figure 5-7**. CQRS implementation
 
@@ -122,7 +122,7 @@ Implementing CQRS can improve application performance for cloud-native services.
 
 ### Event sourcing
 
-Another approach to optimizing high volume data scenarios involves [Event Sourcing](/azure/architecture/patterns/event-sourcing).
+Another approach to optimizing high volume data scenarios involves [Event Sourcing](../azure/architecture/patterns/event-sourcing).
 
 A system typically stores the current state of a data entity. If a user changes their phone number, for example, the customer record is updated with the new number. We always know the current state of a data entity, but each update overwrites the previous state.
 
@@ -130,7 +130,7 @@ In most cases, this model works fine. In high volume systems, however, overhead 
 
 Event Sourcing takes a different approach to capturing data. Each operation that affects data is persisted to an event store. Instead of updating the state of a data record, we append each change to a sequential list of past events - similar to an accountant's ledger. The Event Store becomes the system of record for the data. It's used to propagate various materialized views within the bounded context of a microservice. Figure 5.8 shows the pattern.
 
-![Event Sourcing](/media/data/event-sourcing.png)
+![Event Sourcing](../media/data/event-sourcing.png)
 
 **Figure 5-8**. Event Sourcing
 
