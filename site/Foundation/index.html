@@ -6,28 +6,32 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="This is the site description">
+        <meta name="description" content="Architecting Cloud Native .NET Apps for Azure | Cloud Native Resiliency">
+      
+      
+        <meta name="author" content="robvet">
       
       
       
+        <link rel="prev" href="../Introduction/introduction/">
       
       
-        <link rel="next" href="Introduction/introduction/">
+        <link rel="next" href="GettingStarted/">
       
       
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.34">
     
     
       
-        <title>Designing Intelligent AI Solutions on the Azure Platform</title>
+        <title>Cloud-native resiliency - Designing Intelligent AI Solutions on the Azure Platform</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.35f28582.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.35f28582.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="extra.css">
+      <link rel="stylesheet" href="../extra.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#onramp-to-modern-intelligent-ai-solutions" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,7 +94,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-header__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
+    <a href=".." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-header__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -105,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Cover
+              Cloud-native resiliency
             
           </span>
         </div>
@@ -213,7 +222,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-nav__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
+    <a href=".." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-nav__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -228,17 +237,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -247,7 +249,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -259,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Introduction/introduction/" class="md-nav__link">
+      <a href="../Introduction/introduction/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -276,6 +277,8 @@
       
   
   
+    
+  
   
   
     
@@ -294,16 +297,16 @@
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="Foundation/" class="md-nav__link ">
+            <a href="./" class="md-nav__link md-nav__link--active">
               
   
   <span class="md-ellipsis">
@@ -314,13 +317,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_3" id="__nav_3_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             OnRamp
@@ -336,7 +339,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Foundation/GettingStarted/" class="md-nav__link">
+      <a href="GettingStarted/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -357,7 +360,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Foundation/Fundamentals/" class="md-nav__link">
+      <a href="Fundamentals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -378,7 +381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Foundation/Advanced/" class="md-nav__link">
+      <a href="Advanced/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -449,7 +452,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Platform/AzureFundamentals.md" class="md-nav__link">
+      <a href="../Platform/AzureFundamentals.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -470,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Platform/AzureServices.md" class="md-nav__link">
+      <a href="../Platform/AzureServices.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -491,7 +494,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Platform/AzureFrameworks.md" class="md-nav__link">
+      <a href="../Platform/AzureFrameworks.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -562,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tools/AITools.md" class="md-nav__link">
+      <a href="../Tools/AITools.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -583,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tools/AIFrameworks.md" class="md-nav__link">
+      <a href="../Tools/AIFrameworks.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -604,7 +607,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Tools/AIServices.md" class="md-nav__link">
+      <a href="../Tools/AIServices.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -675,7 +678,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Frameworks/Langchain.md" class="md-nav__link">
+      <a href="../Frameworks/Langchain.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -696,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Frameworks/SemanticKernel.md" class="md-nav__link">
+      <a href="../Frameworks/SemanticKernel.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -717,7 +720,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Frameworks/LlamaIndex.md" class="md-nav__link">
+      <a href="../Frameworks/LlamaIndex.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -788,7 +791,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Data/DataFundamentals/" class="md-nav__link">
+      <a href="../Data/DataFundamentals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -809,7 +812,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Data/DataServices/" class="md-nav__link">
+      <a href="../Data/DataServices/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -830,7 +833,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Data/DataFrameworks/" class="md-nav__link">
+      <a href="../Data/DataFrameworks/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -901,7 +904,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Prompting/PromptingFundamentals.md" class="md-nav__link">
+      <a href="../Prompting/PromptingFundamentals.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -922,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Prompting/PromptingServices.md" class="md-nav__link">
+      <a href="../Prompting/PromptingServices.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -943,7 +946,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Prompting/PromptingFrameworks.md" class="md-nav__link">
+      <a href="../Prompting/PromptingFrameworks.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1014,7 +1017,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Design/AIDesignPatterns.md" class="md-nav__link">
+      <a href="../Design/AIDesignPatterns.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1035,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Design/AIDesignFrameworks.md" class="md-nav__link">
+      <a href="../Design/AIDesignFrameworks.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1056,7 +1059,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Design/AIDesignServices.md" class="md-nav__link">
+      <a href="../Design/AIDesignServices.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1084,7 +1087,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1114,6 +1117,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1128,15 +1133,48 @@
                   
 
 
-  <h1>Cover</h1>
+<h1 id="onramp-to-modern-intelligent-ai-solutions">OnRamp to modern Intelligent AI Solutions</h1>
+<p>While not a book about AI fundamentals, we want to provide an onramp for preparing you for crafting modern AI solutions.</p>
+<p>Resiliency is the ability of your system to react to failure and still remain functional. It's not about avoiding failure, but accepting failure and constructing your cloud-native services to respond to it. You want to return to a fully functioning state quickly as possible.</p>
+<p>Unlike traditional monolithic applications, where everything runs together in a single process, cloud-native systems embrace a distributed architecture as shown in Figure 6-1:</p>
+<p><img alt="Distributed cloud-native environment" src="../media/foundation/distributed-cloud-native-environment.png" /></p>
+<p><strong>Figure 6-1.</strong> Distributed cloud-native environment</p>
+<p>In the previous figure, each microservice and cloud-based <a href="https://12factor.net/backing-services">backing service</a> execute in a separate process, across server infrastructure, communicating via network-based calls.</p>
+<p>Operating in this environment, a service must be sensitive to many different challenges:</p>
+<ul>
+<li>
+<p>Unexpected network latency - the time for a service request to travel to the receiver and back.</p>
+</li>
+<li>
+<p><a href="/azure/architecture/best-practices/transient-faults">Transient faults</a> - short-lived network connectivity errors.</p>
+</li>
+<li>
+<p>Blockage by a long-running synchronous operation.</p>
+</li>
+<li>
+<p>A host process that has crashed and is being restarted or moved.</p>
+</li>
+<li>
+<p>An overloaded microservice that can't respond for a short time.</p>
+</li>
+<li>
+<p>An in-flight orchestrator operation such as a rolling upgrade or moving a service from one node to another.</p>
+</li>
+<li>
+<p>Hardware failures.</p>
+</li>
+</ul>
+<p>Cloud platforms can detect and mitigate many of these infrastructure issues. It may restart, scale out, and even redistribute your service to a different node.  However, to take full advantage of this built-in protection, you must design your services to react to it and thrive in this dynamic environment.</p>
+<p>In the following sections, we'll explore defensive techniques that your service and managed cloud resources can leverage to minimize downtime and disruption.</p>
 
-<p><img src="media/cover.png" style="width: 100%; height: auto;" alt="Example Image"></p>
 
 
 
 
 
 
+  
+  
 
 
 
@@ -1159,15 +1197,31 @@
       
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
+          
+          <a href="../Introduction/introduction/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Introduction">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Introduction
+              </div>
+            </div>
+          </a>
+        
         
           
-          <a href="Introduction/introduction/" class="md-footer__link md-footer__link--next" aria-label="Next: Introduction">
+          <a href="GettingStarted/" class="md-footer__link md-footer__link--next" aria-label="Next: Getting Started">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Introduction
+                Getting Started
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1205,12 +1259,12 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [{"language": "en"}, "navigation.footer", {"favicon": "media/favicon.png"}, "search.highlight", "search.share", "search.suggest", "navigation.indexes"], "search": "assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [{"language": "en"}, "navigation.footer", {"favicon": "media/favicon.png"}, "search.highlight", "search.share", "search.suggest", "navigation.indexes"], "search": "../assets/javascripts/workers/search.07f07601.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.56dfad97.min.js"></script>
+      <script src="../assets/javascripts/bundle.56dfad97.min.js"></script>
       
-        <script src="js/collapse_nav.js"></script>
+        <script src="../js/collapse_nav.js"></script>
       
     
   </body>

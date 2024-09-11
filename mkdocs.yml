@@ -11,7 +11,8 @@ favicon: media/favicon.png
 nav:
   - Cover: index.md
   - Introduction: Introduction/introduction.md
-  - Foundation:
+  - OnRamp:
+      - OnRamp: Foundation/index.md
       - Getting Started: Foundation/GettingStarted.md
       - Fundamentals: Foundation/Fundamentals.md
       - Advanced: Foundation/Advanced.md
@@ -57,7 +58,7 @@ theme:
     - search.highlight
     - search.share
     - search.suggest
-
+    - navigation.indexes
 
     # Adds menu button to the top of the page
 #    - navigation.sections
