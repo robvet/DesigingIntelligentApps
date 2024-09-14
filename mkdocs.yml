@@ -14,8 +14,11 @@ nav:
   - OnRamp:
       - OnRamp: Foundation/index.md
       - Getting Started: Foundation/GettingStarted.md
-      - Fundamentals: Foundation/Fundamentals.md
       - Advanced: Foundation/Advanced.md
+      - Fundamentals:
+          - Fundamentals: Foundation/Fundamentals/index.md
+          - Numerus: Foundation/Fundamentals/Numerus.md
+          - Verbum : Foundation/Fundamentals/Verbum.md
   - Platform:
       - Azure Fundamentals: Platform/AzureFundamentals.md
       - Azure Services: Platform/AzureServices.md
@@ -32,6 +35,10 @@ nav:
       - Data Fundamentals: Data/DataFundamentals.md
       - Data Services: Data/DataServices.md
       - Data Frameworks: Data/DataFrameworks.md
+      - Modeling:
+          - Modeling: Data/Modeling/index.md
+          - Relational: Data/Modeling/Relational.md
+          - NoSql: Data/Modeling/NoSql.md
   - Prompting:
       - Prompting Fundamentals: Prompting/PromptingFundamentals.md
       - Prompting Services: Prompting/PromptingServices.md
