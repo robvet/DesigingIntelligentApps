@@ -66,12 +66,20 @@ theme:
     - search.share
     - search.suggest
     - navigation.indexes
+    - navigation.top
 
-    # Adds menu button to the top of the page
-#    - navigation.sections
-#    - navigation.expand
-#    - navigation.path
+  # following for top navigation
+  # https://jimandreas.github.io/mkdocs-material/setup/setting-up-navigation/
 #    - navigation.tabs
+#    # automatically expands child navigation items
+#    - navigation.expand
+#    - navigation.sections
+#    - navigation.path
+
+#    - navigation.tabs.sticky
+#    - navigation.top
+    # Not sure what indexes does?
+    #- navigation.indexes
     # Blah
 #    - navigation.footer
 #    - navigation.indexes
