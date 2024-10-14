@@ -15,11 +15,14 @@
 /*.md-sidebar--primary .md-nav__item--nested {*/
 /*    padding-left: 30px !important;*/
 /*}*/
-/*Pushes child nav sectoin items to the right*/
+
+/*Pushes everything to the right*/
 /*.md-sidebar--primary .md-nav__list {*/
 /*    padding-left: 35px !important;*/
 /*}*/
 
+
+/*Perfect, but child items are to left*/
 /*.md-sidebar--primary .md-nav__list {*/
 /*    padding-left: 15px !important;*/
 /*}*/
@@ -28,9 +31,21 @@
 /*    padding-left: 1px !important;*/
 /*}*/
 
+
+
+/*Child are great, but parts are too far to the right*/
+
 /*.md-sidebar--primary .md-nav__item {*/
 /*    padding-left: 35px !important;*/
 /*}*/
+
+/*git*/
+.md-sidebar--primary .md-nav__item {
+    padding-left: 15px !important;
+}
+
+
+
 /*.md-nav__item {*/
 /*    padding-left: 35px !important;*/
 /*}*/
@@ -44,15 +59,32 @@
 /*}*/
 
 
-/* Move .md-nav__item by 1px */
-.md-nav__item {
-    margin-left: 1px;
-}
+/*!*!* Move .md-nav__item by 1px *!*!*/
+/*.md-nav__item {*/
+/*    margin-left: 1px;*/
+/*}*/
 
-/* Move .md-nav__link by 15px without affecting .md-nav__item */
-.md-nav__link {
-    padding-left: 25px;
-}
+/*.md-nav__link {*/
+/*    margin-left: 1px;*/
+/*}*/
+
+/*!* Move .md-nav__link by 15px without affecting .md-nav__item *!*/
+/*.md-nav__link {*/
+/*    position: relative;*/
+/*    padding-left: 25px;*/
+/*}*/
+
+/* Set .md-nav__item to inline-block so it's independent */
+/*.md-nav__item {*/
+/*    display: inline-block;*/
+/*    margin-left: 1px;*/
+/*}*/
+
+/*!* Set padding for .md-nav__link *!*/
+/*.md-nav__link {*/
+/*    padding-left: 35px;*/
+/*    display: inline-block;*/
+/*}*/
 
 
 

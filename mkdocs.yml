@@ -10,7 +10,8 @@ site_description: >-
 favicon: media/favicon.png
 nav:
   - Cover: index.md
-  - Introduction: Introduction/introduction.md
+  - The Application Evolution: Introduction/ApplicationEvolution.md
+  # - Introduction: Introduction/introduction.md
   - OnRamp:
       - OnRamp: Foundation/index.md
       - Getting Started: Foundation/GettingStarted.md
@@ -20,13 +21,17 @@ nav:
           - Numerus: Foundation/Fundamentals/Numerus.md
           - Verbum : Foundation/Fundamentals/Verbum.md
   - Platform:
-      - Azure Fundamentals: Platform/AzureFundamentals.md
-      - Azure Services: Platform/AzureServices.md
+      - Azure AI Services:
+          - AI Services: Platform/AzureAIServices/index.md
+          - Document Intelligence: Platform/AzureAIServices/documentIntelligence.md
+          - Vision: Platform/AzureAIServices/vision.md
+          - Language: Platform/AzureAIServices/language.md
+          - Translator: Platform/AzureAIServices/translator.md
       - Azure Frameworks: Platform/AzureFrameworks.md
   - Tools:
+      - AI Studio: Tools/AITools.md
       - AI Tools: Tools/AITools.md
       - AI Frameworks: Tools/AIFrameworks.md
-      - AI Services: Tools/AIServices.md
   - Frameworks:
       - Langchain: Frameworks/Langchain.md
       - Semantic Kernel: Frameworks/SemanticKernel.md
@@ -67,6 +72,9 @@ theme:
     - search.suggest
     - navigation.indexes
     - navigation.top
+
+    # left-hand menus render as open at start
+    # - navigation.expand
 
   # following for top navigation
   # https://jimandreas.github.io/mkdocs-material/setup/setting-up-navigation/
