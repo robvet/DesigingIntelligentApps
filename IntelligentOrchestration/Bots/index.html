@@ -1,0 +1,2067 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="This is the site description">
+      
+      
+      
+      
+        <link rel="prev" href="../Index/">
+      
+      
+        <link rel="next" href="../AIAutomation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>Bots - Designing Intelligent AI Solutions on the Azure Platform</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bots" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-header__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Designing Intelligent AI Solutions on the Azure Platform
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Bots
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="lime"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Designing Intelligent AI Solutions on the Azure Platform" class="md-nav__button md-logo" aria-label="Designing Intelligent AI Solutions on the Azure Platform" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Designing Intelligent AI Solutions on the Azure Platform
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cover
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Introduction/ApplicationEvolution/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    The Application Evolution
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Foundation/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    OnRamp
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            OnRamp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Foundation/GettingStarted/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Foundation/Advanced/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Advanced
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Foundation/Fundamentals/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Foundation/Fundamentals/Numerus/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Numerus
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Foundation/Fundamentals/Verbum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Verbum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Platform
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Platform
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/OpenAIModels/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Azure OpenAI Models
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Platform/AzureAIServices/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Azure AI Services
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Azure AI Services
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/AzureAIServices/documentIntelligence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Document Intelligence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/AzureAIServices/vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/AzureAIServices/language/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Language
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/AzureAIServices/translator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Translator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tools
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Tools
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/AITools.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Studio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/AITools.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Tools
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Tools/AIFrameworks.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Frameworks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Frameworks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frameworks/Langchain.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Langchain
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frameworks/SemanticKernel.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Semantic Kernel
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Frameworks/LlamaIndex.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Llama Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Prompting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Prompting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Prompting/PromptingFundamentals.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompting Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Prompting/PromptingServices.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompting Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Prompting/PromptingFrameworks.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Prompting Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Data
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Data
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data/DataFundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data/DataServices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data/DataFrameworks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Data Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_4" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../Data/Modeling/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Modeling
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_4">
+            <span class="md-nav__icon md-icon"></span>
+            Modeling
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data/Modeling/Relational/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Relational
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Data/Modeling/NoSql/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NoSql
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Intelligent Orchestration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            Intelligent Orchestration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Index/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Intelligent Orchestration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Bots
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Bots
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raw-bot-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raw BOT Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copilot-studio-raw-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot Studio Raw Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-agent-for-automation-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent for Automation Content
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AIAutomation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AgentAutomation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Agent Automation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Designs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            Designs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/AIDesignPatterns.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Design Patterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/AIDesignFrameworks.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Design Frameworks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Design/AIDesignServices.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AI Design Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    About Us
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#raw-bot-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Raw BOT Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#copilot-studio-raw-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Copilot Studio Raw Content
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-agent-for-automation-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      AI Agent for Automation Content
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="bots">Bots</h1>
+<p>Coming soon!</p>
+<p><img alt="Under Construction" src="../../media/construction.png" /></p>
+<h3 id="raw-bot-content">Raw BOT Content</h3>
+<pre><code class="language-markdown">A &quot;bot&quot; is a software application that automates tasks or simulates human 
+conversations. In the context of the Azure AI stack, a bot fits into the 
+category of Conversational AI. Specifically, bots are integrated with 
+services like Azure Bot Service and Azure Cognitive Services to enable 
+intelligent interactions with users.
+
+Here's where a bot fits into the Azure AI stack:
+Azure Bot Service: This is the primary service for building bots on Azure. 
+It provides a framework for designing, building, testing, and deploying 
+bots that can interact with users through a variety of channels, such as 
+Microsoft Teams, Slack, websites, and others.
+
+Azure Cognitive Services: Bots often use various Cognitive Services to 
+enhance their capabilities. These services allow bots to:
+
+- Understand Language: Using services like Language Understanding (LUIS) 
+  or Azure OpenAI, bots can process natural language inputs and respond 
+  appropriately.
+- Speech Services: Convert speech to text and vice versa to allow 
+  voice-based interactions.
+- Computer Vision: Allow bots to analyze and understand visual content 
+  (e.g., image recognition).
+- Azure AI Solutions: Bots can leverage solutions such as Azure OpenAI 
+  Service to use powerful large language models for generating human-like 
+  responses, providing more natural and contextually aware interactions.
+
+Integration with Other Azure Services: Bots are often integrated with 
+other Azure services like Azure Functions for serverless compute, Azure 
+Logic Apps for workflows, or Azure SQL for storing user interaction data.
+
+In short, a bot in Azure is typically the front-facing component that 
+interacts with users, while services like Azure Bot Service and Cognitive 
+Services provide the intelligence, language understanding, and interaction 
+capabilities.
+
+A bot in Azure often integrates workflows with cognitive capabilities to deliver intelligent, dynamic interactions. Here's how that breaks down:
+
+1 Workflow Integration:
+- Bots can trigger workflows to automate tasks and processes. These workflows are often built using tools like Azure Logic Apps or Azure Functions, allowing the bot to perform complex operations in response to user input. For instance, a bot could help a user check the status of an order, create an appointment, or perform backend operations like querying a database or sending notifications.
+1 Cognitive Capabilities:
+- The bot utilizes Cognitive Services (such as LUIS, Speech Services, Azure OpenAI, and more) to understand and respond to user input in a human-like way. These capabilities allow the bot to:
+  - Underrstand natural language through AI models (e.g., LUIS or OpenAI). 
+  - Analyze user sentiment, detect objects in images, or even translate languages.
+  - Respond using text or voice, simulating human conversation.
+
+Key Benefits:
+- Dynamic Conversations: Bots can engage in complex, multi-turn conversations, handling contextual dialogue.
+- Automated Task Execution: They can automate a series of actions or invoke workflows (e.g., fetching information, scheduling, updating records).
+- Seamless Integration: Bots are often integrated into existing applications and platforms, providing a conversational interface to interact with services and data.
+
+In essence, bots act as the user-facing component that seamlessly integrates workflows (for task automation) with AI-driven cognitive capabilities (for understanding and responding intelligently).
+
+
+
+So, speaking precisely, let’s define a workflow: A set of tasks or steps that execute a process?
+
+Definition:
+A workflow is a set of tasks or steps that are executed in a specific sequence to complete a process or achieve a particular outcome.
+Key Aspects of a Workflow:
+Tasks/Steps: Individual actions that make up the workflow. Each step can represent a distinct operation or decision point.
+
+Execution Sequence: The order in which tasks are executed. This can be linear (one task after another) or conditional (branching based on decisions or conditions).
+
+Process: The overarching goal or operation that the workflow is designed to achieve, such as processing an order, onboarding a user, or handling a customer service request.
+
+Automation: Workflows can be manual, automated, or a combination of both. In the case of bots, they are typically automated workflows triggered by user input or system events.
+
+Example:
+A customer support bot workflow might look like:
+
+Receive User Input: The bot asks the user for a query or issue description.
+Analyze Input: The bot uses AI (e.g., natural language processing) to understand the issue.
+Trigger Action: The bot triggers a workflow, such as creating a support ticket, providing troubleshooting steps, or transferring to a live agent.
+Follow-Up: The bot confirms the resolution with the user or tracks the ticket status.
+In short, a workflow represents a series of connected tasks that move data or operations through a defined path to complete a larger process.
+
+
+Yes, the input to a bot workflow can indeed come from various sources, but most commonly, it is user input through text or speech. Here’s how it works in more detail:
+
+Types of Input:
+Text Input:
+
+Users type messages or commands, which the bot then processes using natural language understanding (NLU) services like LUIS or Azure OpenAI. For example, a user might type, “What’s the status of my order?” and the bot parses this to trigger the appropriate workflow.
+Speech Input:
+
+Users speak to the bot, and the bot uses Speech-to-Text services to convert spoken language into text, then processes it in a similar way to text input. For example, the user could say, “Check my order status,” and the bot would convert the speech into text and analyze it to proceed with the workflow.
+Additional Input Channels:
+Click-based or Menu Inputs: In some cases, bots can accept inputs via pre-defined buttons or menus, often seen in chatbot interfaces where users choose from specific options.
+
+Sensor or System Inputs: In more advanced workflows, input could come from external systems or sensors, where the bot reacts to data changes or system events rather than direct user interaction (though this is less common in conversational bots).
+
+Processing:
+Once the input is received (whether text or speech), it is analyzed and understood using AI models. Based on this understanding, the bot can decide which workflow to execute and what specific actions need to be taken.
+
+In summary, the most common inputs to a bot are user inputs via text or speech, which trigger workflows to complete tasks or provide responses.
+
+
+
+
+
+another process can certainly invoke a workflow without a bot being involved. In such cases, a bot is not necessarily required. Let me clarify the distinction:
+
+When a Bot is Needed:
+A bot is typically used when user interaction is involved, particularly when the user communicates via text or speech. Bots provide a conversational interface to trigger workflows based on user input, making them essential in situations where:
+
+Users need to interact with a system conversationally.
+Real-time, human-like responses are expected (e.g., customer service, virtual assistants).
+When a Bot is Not Needed:
+If the workflow is being triggered by another process, system, or event—without direct user interaction—then a bot is not necessary. Instead, you might simply use:
+
+Azure Logic Apps or Azure Functions to trigger workflows based on specific conditions, such as:
+Event-driven workflows (e.g., an order placed in an e-commerce system).
+Time-based workflows (e.g., scheduling tasks at specific intervals).
+System-to-system workflows (e.g., integration between backend systems).
+In this case, the workflow could be triggered automatically without the need for conversational input, and the bot layer wouldn’t be required.
+
+Example without a Bot:
+Let’s say you have a system where:
+
+A customer places an order, which automatically triggers a backend workflow to process payments, update inventory, and notify shipping.
+This entire process can be automated using Azure Functions or Logic Apps, where the workflow starts based on the order placement event—no bot is needed.
+When Both Are Useful:
+There are scenarios where a bot and automated processes can coexist:
+
+User-driven Bot Interaction: A user asks the bot, &quot;What's my order status?&quot;
+System-driven Workflow: Behind the scenes, the bot triggers a backend workflow to retrieve order information from a database or ERP system.
+In summary, a bot is only needed when human interaction is a core requirement. If the workflow is purely process- or event-driven, the bot can be bypassed, and other automation tools (e.g., Logic Apps, Functions) can handle the workflow execution.
+
+
+
+
+The role of the bot is to serve as the interface between the process (or workflow) and the user. The bot takes user input (through text, speech, or even menu-based selections), processes it, and then triggers the appropriate workflow behind the scenes. Once the workflow completes, the bot communicates the results or outcomes back to the user in a conversational manner.
+
+Key Roles of the Bot:
+User Interaction: The bot handles the communication with the user, understanding their intent using AI services and natural language processing.
+
+Triggering Workflows: Based on the user’s input, the bot triggers workflows or processes in the backend (e.g., querying a database, performing a transaction, or fetching data from another system).
+
+Providing Responses: Once the workflow completes, the bot sends the response back to the user in a friendly, understandable format, making the interaction feel seamless.
+
+In essence, the bot bridges the gap between the user and the complex processes happening in the backend, providing a conversational front-end to otherwise technical or automated systems.
+
+
+
+Is the bot part of the workflow or more of an interface to interact with the workflow?
+
+The bot is primarily the interface that interacts with the workflow rather than being a part of the workflow itself. Here's the distinction:
+
+Bot as an Interface:
+The bot serves as the user-facing layer. It is the component that receives user input (text, speech, etc.), processes it, and then determines what action to take based on the input.
+After understanding the user's intent (through natural language processing), the bot triggers or interacts with a backend workflow (which could be an automation process, a query, or an external service).
+Think of the bot as a messenger: it gathers information from the user and hands it over to the workflow, then returns the result or response back to the user.
+Workflow as the Backend Process:
+The workflow is the series of tasks or operations that actually executes the business logic or process. It could involve accessing databases, performing calculations, or interacting with other systems.
+For example, once the bot understands that a user is asking for their order status, it triggers a workflow that:
+Queries a database for the order information.
+Formats the data for the bot to present.
+Returns the result to the bot, which then responds to the user.
+In Summary:
+The bot is not part of the workflow; rather, it is an interface that triggers the workflow and communicates the results of the workflow back to the user.
+The workflow handles the actual logic and tasks behind the scenes, such as fetching data, processing requests, or integrating with other systems.
+This separation of roles allows the bot to focus on the user interaction while the workflow focuses on the business process execution.
+
+
+
+
+</code></pre>
+<h3 id="copilot-studio-raw-content">Copilot Studio Raw Content</h3>
+<pre><code class="language-markdown">Azure Copilot Studio provides both natural language capabilities and a visual platform for constructing workflows, making it a powerful tool for building conversational bots quickly.
+
+Key Features:
+Natural Language Capabilities:
+
+Azure Cognitive Services (like LUIS) are integrated, enabling the bot to understand and interpret user inputs in natural language. You can easily define intents (what the user wants) and entities (key pieces of information) without needing to code these models yourself.
+This allows the bot to carry out dynamic, human-like conversations by responding intelligently to user queries.
+Visual Workflow Construction:
+
+Copilot Studio provides a drag-and-drop interface that allows users to visually design the bot’s workflow. You can create a flow of tasks that the bot will follow based on user input or system triggers.
+The visual interface also lets you easily integrate with backend workflows (via Power Automate) to connect the bot to business processes, databases, APIs, and other services. For example, you can add a workflow to check the status of an order or update a user’s account.
+Summary:
+Natural Language Capabilities: Understand and respond to user input conversationally.
+Visual Workflow Construction: Build workflows that define how the bot responds, integrates with external services, and handles backend processes, all with minimal coding.
+In short, Azure Copilot Studio allows you to both harness natural language understanding and easily construct workflows through a visual platform.
+
+Then Copilot Studio enables construction of the bot (user interface layer) and construction of the backend process?
+
+Azure Copilot Studio enables the construction of both the bot (user interface layer) and the integration of the bot with the backend process (workflow). Here’s how it breaks down:
+
+1. Bot (User Interface Layer) Construction:
+In Copilot Studio, you can build the bot's conversational interface using a visual, drag-and-drop interface. This includes:
+Defining conversations: You design how the bot interacts with the user, what questions it asks, and how it responds to user input.
+Natural language understanding: You can leverage built-in AI capabilities (like LUIS or Azure OpenAI) to interpret user queries, extract intents, and handle complex, multi-turn dialogues.
+Multi-channel deployment: The bots you create can be deployed across multiple platforms, like websites, Microsoft Teams, Slack, or custom apps.
+2. Backend Process (Workflow) Integration:
+Once the bot understands the user's input, Copilot Studio allows you to integrate with Power Automate or other backend services to construct and trigger the workflow that handles the actual business logic. This includes:
+Connecting to external services: Through Power Automate, the bot can trigger automated workflows that access data from databases, call APIs, or integrate with business systems (e.g., CRM, ERP).
+Executing tasks: These workflows can perform a variety of actions, such as processing orders, fetching user information, or sending notifications.
+Returning results: After the workflow completes, the results are sent back to the bot, which then relays the information to the user.
+In Summary:
+Copilot Studio provides the tools to build the bot as the user interface.
+It also enables you to construct and integrate backend workflows through visual tools like Power Automate.
+This dual capability makes it possible to quickly build a fully-functional bot that not only interacts with users but also automates backend processes without the need for deep coding expertise.
+
+
+   o, Power Automate is the tool for building the workflow. How is it different from azure logic apps?
+
+Power Automate is the tool for building workflows, and it's similar to Azure Logic Apps in that both are used to automate processes. However, there are key differences between the two, especially in terms of target audience, features, and integration within the Microsoft ecosystem.
+
+Key Differences Between Power Automate and Azure Logic Apps:
+1. Target Audience:
+Power Automate: Primarily designed for business users and citizen developers. It’s part of the Microsoft Power Platform and focuses on providing a no-code/low-code solution for automating everyday tasks and processes. It's integrated with Microsoft 365 apps, so it's commonly used to automate workflows within Office 365, SharePoint, Dynamics 365, and other business tools.
+Azure Logic Apps: Primarily aimed at developers and IT professionals. It’s a part of the Azure ecosystem and is built for enterprise-grade workflows that require more complex integrations with Azure services, on-premises systems, and third-party APIs.
+2. Platform and Environment:
+Power Automate: Operates within the Power Platform and is more tightly integrated with business applications like Microsoft 365, Dynamics 365, and Power Apps. It allows users to quickly automate business processes without extensive Azure knowledge.
+Azure Logic Apps: Is part of Azure, providing a more scalable and flexible platform that integrates deeply with Azure services (like Azure Functions, Cosmos DB, and more). It’s built for scenarios that require advanced automation, high scalability, and tighter integration with other Azure tools.
+3. Development Experience:
+Power Automate: Offers a simplified interface tailored for non-developers. It’s ideal for automating simple, everyday business workflows (e.g., sending approval emails, creating alerts, moving files).
+Azure Logic Apps: Provides more control and flexibility for advanced workflows, including support for custom connectors, complex control flows, and more powerful integrations. Developers can work in Visual Studio and use Logic Apps in infrastructure-as-code deployments via ARM templates.
+4. Integration Options:
+Power Automate: Is better suited for business application workflows (like automating tasks in SharePoint, Teams, Outlook, or other Microsoft 365 apps). It also integrates with hundreds of SaaS services via pre-built connectors.
+Azure Logic Apps: Offers a broader range of integration options, including Azure-native services, on-premises systems, B2B workflows, and enterprise-grade APIs. It’s more suitable for complex workflows that require high availability, error handling, and integration with non-Microsoft systems.
+5. Pricing Model:
+Power Automate: Has a per-user, per-flow pricing model, meaning pricing is based on the number of users and flows you create. It's usually more affordable for smaller, user-specific automations.
+Azure Logic Apps: Follows a pay-as-you-go pricing model, where you're charged based on the number of actions, triggers, and connectors used. This makes it more scalable for high-volume workflows, but pricing can increase with complexity.
+6. Use Cases:
+Power Automate: Typically used for business-focused workflows like automating approval processes, synchronizing data between apps, generating reports, or automating tasks within Microsoft 365.
+Azure Logic Apps: Often used for enterprise integration scenarios like integrating cloud and on-premises systems, automating large-scale workflows, connecting with ERP systems, or managing APIs across multiple services.
+Summary of Differences:
+Feature Power Automate  Azure Logic Apps
+Audience    Business users, citizen developers  Developers, IT professionals
+Platform    Power Platform (Microsoft 365 focus)    Azure (scalable, enterprise focus)
+Development No-code/Low-code, simple interface  Advanced, customizable, integrates with Azure
+Integration Focus on Microsoft 365, business apps   Extensive integrations, including Azure services and on-prem systems
+Pricing Per-user, per-flow pricing  Pay-per-action pricing, scalable
+Use Case    Automating business tasks (approvals, notifications, simple flows)  Enterprise-grade workflows, system integrations, cloud/on-prem automation
+When to Use Each:
+Power Automate: Best for automating day-to-day business tasks with a simple interface and deep integration into Microsoft 365.
+Azure Logic Apps: Ideal for complex, large-scale workflows, especially when integrating with Azure services or when enterprise-level scalability is needed.
+In summary, Power Automate is the preferred tool for simpler, business-centric workflows, while Azure Logic Apps is designed for more complex, scalable, and enterprise-grade workflows. Both can be used to integrate with a bot, depending on the complexity of the automation needed
+
+
+
+
+
+</code></pre>
+<h3 id="ai-agent-for-automation-content">AI Agent for Automation Content</h3>
+<pre><code class="language-markdown">
+AI agents can both complement and, in some cases, override the need for traditional tools like Power Automate or Azure Logic Apps, depending on the complexity of the use case and the intelligence required. Let’s break it down:
+
+1. Complementing Workflows (Power Automate and Logic Apps):
+AI agents can work in tandem with these workflow automation tools by enhancing their capabilities with intelligence and decision-making. Here’s how AI agents can complement workflows:
+
+Decision Making and Personalization:
+While tools like Power Automate and Logic Apps are fantastic for automating structured workflows based on predefined conditions, they often lack the dynamic decision-making that AI agents bring. For example, an AI agent can personalize responses, make real-time decisions, or adapt workflows based on user behavior, preferences, or changing data.
+In a scenario where predefined conditions might be too rigid, an AI agent can assess the context (via natural language processing or other AI services) and then invoke the appropriate workflow based on more nuanced logic.
+Advanced Interactions:
+AI agents enable more natural, human-like interactions. For example, while a Power Automate flow might trigger an action when a user fills out a form, an AI agent could carry on a conversation with the user, ask clarifying questions, and then choose which automated workflow to trigger based on deeper understanding (via Azure Cognitive Services).
+Triggering Workflows:
+AI agents can trigger Power Automate or Logic Apps workflows based on user interactions or real-time data. The agent could assess incoming requests and determine which backend workflows should run, whether they are simple tasks like sending notifications or more complex processes like updating an ERP system.
+2. Overriding Traditional Tools: When AI Agents Become the Primary Driver:
+In some cases, AI agents can essentially override or reduce reliance on tools like Power Automate or Logic Apps, particularly when flexibility, adaptability, and intelligence are key to the process. Here’s when AI agents could take the lead:
+
+Unstructured Workflows:
+
+In scenarios where workflows are dynamic and unstructured, traditional workflow tools may struggle because they rely on rigid, predefined rules. AI agents, however, can learn, adapt, and make decisions on the fly based on real-time inputs. This is particularly useful in complex environments like customer service, where every interaction might be different, requiring the agent to dynamically adjust the process.
+Cognitive Automation:
+
+AI agents can take over processes that require understanding, learning, and decision-making, far beyond what traditional automation tools can handle. For instance, an AI agent might review contracts, analyze sentiment, and even generate responses that adapt based on context, eliminating the need for a static workflow.
+In this sense, AI agents provide cognitive automation—not just automating repetitive tasks but also understanding and acting upon the information they process.
+Complex Decision Trees:
+
+AI agents can handle complex decision trees where there are numerous branching paths, exceptions, and conditions that traditional workflow tools might struggle to manage efficiently. For example, an AI agent can use machine learning models to predict outcomes, optimize decisions, or continuously improve its behavior without the need for manually predefined workflows.
+When to Use AI Agents Over Workflow Tools:
+High Variability in Processes: If the process has many variables, conditions, and exceptions, AI agents can dynamically manage these situations better than fixed workflows.
+Learning from Data: If the process requires adaptation and learning from data, AI agents can use historical information, user behavior, or real-time inputs to evolve and improve over time.
+Natural Language Interactions: If natural language conversations are key (e.g., customer support or virtual assistants), AI agents can manage these interactions, decide what workflows to trigger, or even resolve issues without needing a traditional workflow.
+Complex Decision-Making: AI agents excel when a process involves complex decision-making, where factors like predictions, recommendations, or optimizations are needed in real-time.
+Examples of AI Agents Overriding Traditional Workflows:
+Customer Service: Instead of triggering workflows based on rigid forms or predefined responses, an AI agent could hold dynamic conversations, understand the context, and autonomously decide whether to escalate an issue, resolve it, or gather more information—without a predefined workflow.
+Supply Chain Optimization: An AI agent could analyze data from various points in the supply chain and adjust operations on the fly based on predicted demand, availability of materials, or external factors like weather or market conditions—overriding the need for static workflow automation.
+Document Processing: AI agents could read, understand, and extract key information from documents (e.g., contracts, invoices), adapt based on context, and then autonomously decide what actions to take, such as making approvals, generating summaries, or routing tasks.
+Conclusion:
+AI agents can complement traditional workflow tools like Power Automate and Azure Logic Apps by adding intelligence, adaptability, and dynamic decision-making to predefined workflows.
+In more complex, unstructured, or cognitive scenarios, AI agents can override traditional workflows entirely, becoming the primary driver for automation and decision-making processes by understanding context, learning from data, and adapting in real time.
+Thus, while traditional tools are great for predictable, rule-based automations, AI agents shine when tasks require intelligence, adaptability, and learning.
+
+
+</code></pre>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Index/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Intelligent Orchestration">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Intelligent Orchestration
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../AIAutomation/" class="md-footer__link md-footer__link--next" aria-label="Next: AI Automation">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                AI Automation
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": [{"language": "en"}, "navigation.footer", {"favicon": "media/favicon.png"}, "search.highlight", "search.share", "search.suggest", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../js/collapse_nav.js"></script>
+      
+    
+  </body>
+</html>

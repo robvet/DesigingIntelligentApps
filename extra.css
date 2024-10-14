@@ -1,0 +1,134 @@
+/*Move arrow icon to the left of the navigation bar*/
+.md-nav__link {
+  flex-direction: row-reverse;
+}
+.md-nav__link .md-ellipsis {
+  flex-grow: 1;
+}
+
+
+/*.md-nav__item--nested {*/
+/*    padding-left: 30px; !* Adjust this value to increase indentation *!*/
+/*}*/
+
+/*puhses all child items */
+/*.md-sidebar--primary .md-nav__item--nested {*/
+/*    padding-left: 30px !important;*/
+/*}*/
+
+/*Pushes everything to the right*/
+/*.md-sidebar--primary .md-nav__list {*/
+/*    padding-left: 35px !important;*/
+/*}*/
+
+
+/*Perfect, but child items are to left*/
+/*.md-sidebar--primary .md-nav__list {*/
+/*    padding-left: 15px !important;*/
+/*}*/
+
+/*.md-nav__item {*/
+/*    padding-left: 1px !important;*/
+/*}*/
+
+
+
+/*Child are great, but parts are too far to the right*/
+
+/*.md-sidebar--primary .md-nav__item {*/
+/*    padding-left: 35px !important;*/
+/*}*/
+
+/*git*/
+.md-sidebar--primary .md-nav__item {
+    padding-left: 15px !important;
+}
+
+
+
+/*.md-nav__item {*/
+/*    padding-left: 35px !important;*/
+/*}*/
+
+/*.md-nav__item {*/
+/*    padding-left: 10px !important;*/
+/*}*/
+
+/*.md-nav__link {*/
+/*    padding-left: 15px !important;*/
+/*}*/
+
+
+/*!*!* Move .md-nav__item by 1px *!*!*/
+/*.md-nav__item {*/
+/*    margin-left: 1px;*/
+/*}*/
+
+/*.md-nav__link {*/
+/*    margin-left: 1px;*/
+/*}*/
+
+/*!* Move .md-nav__link by 15px without affecting .md-nav__item *!*/
+/*.md-nav__link {*/
+/*    position: relative;*/
+/*    padding-left: 25px;*/
+/*}*/
+
+/* Set .md-nav__item to inline-block so it's independent */
+/*.md-nav__item {*/
+/*    display: inline-block;*/
+/*    margin-left: 1px;*/
+/*}*/
+
+/*!* Set padding for .md-nav__link *!*/
+/*.md-nav__link {*/
+/*    padding-left: 35px;*/
+/*    display: inline-block;*/
+/*}*/
+
+
+
+
+
+
+/*.md-nav__item--section > .md-nav > .md-nav__list {*/
+/*  margin-left: 0.5rem;*/
+/*}*/
+/*.md-nav[data-md-level="2"] > .md-nav__list {*/
+/*  margin-left: 5em;*/
+/*  border-left: 1px solid var(--md-accent-fg-color);*/
+/*  padding-left: 5.5em;*/
+/*}*/
+
+
+/*Make the title bigger in the navigation bar*/
+/*.md-header-nav__title {*/
+/*    font-size: 5em !important;  !* Adjust this value to make the title larger *!*/
+/*}*/
+
+/*.md-typeset h1 .md-tag {*/
+/*  font-size: 20px;*/
+/*}*/
+
+/*h1 {*/
+/*    font-size: 10em;  !* Change to your desired size - 3em to 10em*!*/
+/*}*/
+/*h2 {*/
+/*    font-size: 5em; !* Adjust as needed - 2.5em to 5em *!*/
+/*}*/
+/*h3 {*/
+/*    font-size: 4.5em;   !* Adjust as needed - 2em to 4.5em *!*/
+/*}*/
+
+/*Hide the title in the navigation bar*/
+
+/*.md-nav__title {*/
+/*  display: none;*/
+/*}*/
+
+
+
+/*.md-main, .md-content {*/
+/*  margin-top: 0 !important;  !* Adjust the top margin *!*/
+/*  padding-top: 0 !important;  !* Adjust the top padding *!*/
+/*}*/
