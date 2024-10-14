@@ -20,22 +20,31 @@ nav:
           - Fundamentals: Foundation/Fundamentals/index.md
           - Numerus: Foundation/Fundamentals/Numerus.md
           - Verbum : Foundation/Fundamentals/Verbum.md
+
   - Platform:
+      - Azure OpenAI Models: Platform/OpenAIModels.md
       - Azure AI Services:
           - AI Services: Platform/AzureAIServices/index.md
           - Document Intelligence: Platform/AzureAIServices/documentIntelligence.md
           - Vision: Platform/AzureAIServices/vision.md
           - Language: Platform/AzureAIServices/language.md
           - Translator: Platform/AzureAIServices/translator.md
-      - Azure Frameworks: Platform/AzureFrameworks.md
+
   - Tools:
       - AI Studio: Tools/AITools.md
       - AI Tools: Tools/AITools.md
       - AI Frameworks: Tools/AIFrameworks.md
+
   - Frameworks:
       - Langchain: Frameworks/Langchain.md
       - Semantic Kernel: Frameworks/SemanticKernel.md
       - Llama Index: Frameworks/LlamaIndex.md
+
+  - Prompting:
+      - Prompting Fundamentals: Prompting/PromptingFundamentals.md
+      - Prompting Services: Prompting/PromptingServices.md
+      - Prompting Frameworks: Prompting/PromptingFrameworks.md
+
   - Data:
       - Data Fundamentals: Data/DataFundamentals.md
       - Data Services: Data/DataServices.md
@@ -44,10 +53,14 @@ nav:
           - Modeling: Data/Modeling/index.md
           - Relational: Data/Modeling/Relational.md
           - NoSql: Data/Modeling/NoSql.md
-  - Prompting:
-      - Prompting Fundamentals: Prompting/PromptingFundamentals.md
-      - Prompting Services: Prompting/PromptingServices.md
-      - Prompting Frameworks: Prompting/PromptingFrameworks.md
+
+  - Intelligent Orchestration:
+      - Intelligent Orchestration: IntelligentOrchestration/Index.md
+      - Bots: IntelligentOrchestration/Bots.md
+      - AI Automation: IntelligentOrchestration/AIAutomation.md
+      - Agent Automation: IntelligentOrchestration/AgentAutomation.md
+
+
   - Designs:
       - AI Design Patterns: Design/AIDesignPatterns.md
       - AI Design Frameworks: Design/AIDesignFrameworks.md
